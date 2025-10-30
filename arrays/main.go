@@ -27,7 +27,7 @@ func main() {
 	fmt.Println(name)
 
 	// initialize ------------>
-	// var fruits = []string{"lemon", "apple", "orange"}
+	// var fruits = [...]string{"lemon", "apple", "orange"}
 	var fruits = [3]string{"lemon", "apple", "orange"}
 	fmt.Println(fruits)
 	fmt.Println(fruits[1])
@@ -37,8 +37,7 @@ func main() {
 	fmt.Println(success[0])
 
 	// auto length detection ------------->
-	// colors := [...]string{"black", "white", "blue", "purple", "pink"}
-	colors := []string{"black", "white", "blue", "purple", "pink"}
+	colors := [...]string{"black", "white", "blue", "purple", "pink"}
 	colors[2] = "brown"
 	fmt.Println(colors)
 	fmt.Println(len(colors))
@@ -49,7 +48,7 @@ func main() {
 
 	// 2D arrays --------->
 
-	// var logs = [][]int{{1,2,3},{4,5,6}}
+	// var logs = [...][...]int{{1,2,3},{4,5,6}}
 	// var logs = [2][3]int{{1,2,3},{4,5,6}}
 
 	// var logs [2][3]int
@@ -57,7 +56,7 @@ func main() {
 	// logs[0][1] = 13
 	// fmt.Println(logs[0][1])
 
-	// logs := [][]int{{1,2,3},{4,5,6}}
+	// logs := [...][...]int{{1,2,3},{4,5,6}}
 	logs := [2][3]int{{1, 2, 3}, {4, 5, 6}}
 	fmt.Println(logs[1][2])
 
