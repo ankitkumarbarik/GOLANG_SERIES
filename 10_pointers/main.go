@@ -28,8 +28,8 @@ func main() {
 	fmt.Println("address of d:", d)
 
 	*d = 30
-	fmt.Println("value of c:", *d)
-	fmt.Println("value of d:", c)
+	fmt.Println("value of d:", *d)
+	fmt.Println("value of c:", c)
 
 	num := 10
 	callVal(num)
